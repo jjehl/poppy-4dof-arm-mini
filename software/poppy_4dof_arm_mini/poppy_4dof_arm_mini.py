@@ -5,7 +5,7 @@ class Poppy4dofArmMini(AbstractPoppyCreature):
     @classmethod
     def setup(cls, robot):
         for m in robot.motors:
-            m.goto_behavior = 'dummy'
+            m.goto_behavior = 'minjerk'
 
         #robot.attach_primitive(Jump(robot), 'jump')
         #print "robot is setup"
